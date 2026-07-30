@@ -1,0 +1,43 @@
+# Visual Studio
+.vs/
+*.sln
+*.csproj
+*.vbproj
+*.user
+*.userosscache
+*.suo
+*.prefs
+*.cache
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+
+# User-specific files
+*.dbmdl
+*.dbproj
+*.dbproj.user
+*.jfm
+*.jfm.suo
+
+# Visual Studio Code
+.vscode/
+
+# Rider / Jetbrains
+.idea/
+
+# Backup files
+*.bak
+*.tmp
+*.swp
+
+# Others
+*.log
+
+# Ignore any specific environment variable files
+.env

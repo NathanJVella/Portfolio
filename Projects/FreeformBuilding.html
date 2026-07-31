@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--<link rel="shortcut icon" type="image/png" href="./images/favicon.png" />-->
 
     <title>
         Freeform Building
@@ -29,7 +28,7 @@
                     <span>Freeform Building</span>
                 </h1>
 
-                <p></p>
+                <div class="tags" id="freeformSkillsList"></div>
             </div>
         </div>
     </header>
@@ -39,22 +38,56 @@
         </section>
 
         <section id="photos">
+            <div class="container">
+                <!-- Container for the image gallery -->
+                <!-- Full-width images with number text -->
+                <div class="mySlides">
+                    <div class="numbertext">1 / 2</div>
+                    <img src="../images/FreeformBuilding/Blocks.gif" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">2 / 2</div>
+                    <img src="../images/FreeformBuilding/Capture.png" style="width:100%">
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <!-- Image text -->
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+
+                <!-- Thumbnail images -->
+                <div class="row">
+                    <div class="column">
+                        <img class="demo cursor" src="../images/FreeformBuilding/Blocks.gif" style="width:100%" onclick="currentSlide(1)" alt="Demo Gif">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="../images/FreeformBuilding/Capture.png" style="width:100%" onclick="currentSlide(2)" alt="Chaos Screenshot">
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section id="bio">
-            <p>
-                This is a project I started working on which is inspired by Robocraft's robot building system. Growing up, My favourite game to play was Robocraft and when the devs stopped actively working on the game, there was no other game I could replace it with, with the same type of game it was. 
+            <p class="project-description">
+                This is a project I started working on which is inspired by Robocraft's building system. Growing up, this was my all-time favourite game to play and when the developers stopped actively working on the game, there was no other game that could replace it.
             </p>
 
-            <p>
-                I wanted to make a similar system with my own tweaks. This is still a work in progress and still have a lot more planned to add and polish up but this is its current state:
-                <br>- ​3 Modes:
-                <br>- Build Mode
-                <br>- Colour Mode
-                <br>- Test Mode
+            <p class="project-description">
+                I wanted to make a similar system with my own tweaks. This started off as a proof of concept years ago, but I had so much more planned for this and would like to eventually incorporate this system into a proper game setting.
+                <br>In its current state, it features 3 different modes:
+                <br>- <b>Build Mode:</b> Able to scroll through a list of different part types and add them to an existing surface using LMB. Before placing a part, a ghost object of the part will appear so you have an idea of what and how it will be placed. Clicking RMB removes the target part. Scroll Wheel controls the rotation / orintation of the object.
+                <br>- <b>Paint Mode:</b> Able to pre-select a material and whichever part you click on will change its material to the selected one.
+                <br>- <b>Test Mode:</b> Combine all the parts into a single gameobject and assign a rigidbody to test its functions and physics similar to how it would react and behave in a proper game setting.
             </p>
         </section>
     </main>
+
+    <script src="../index.js"></script>
 </body>
 
 </html>

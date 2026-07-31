@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--<link rel="shortcut icon" type="image/png" href="./images/favicon.png" />-->
+    <link rel="icon" type="image/png" href="../images/HorrorTooth/HorrorTooth.png" />
 
     <title>
         Horror Tooth
@@ -29,7 +29,7 @@
                     <span>Horror Tooth</span>
                 </h1>
 
-                <p></p>
+                <div class="tags" id="horrorToothSkillsList"></div>
             </div>
         </div>
     </header>
@@ -39,14 +39,80 @@
         </section>
 
         <section id="photos">
+            <div class="container">
+                <!-- Container for the image gallery -->
+                <!-- Full-width images with number text -->
+                <div class="mySlides">
+                    <div class="numbertext">1 / 6</div>
+                    <img src="../images/HorrorTooth/Capture.png" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">2 / 6</div>
+                    <img src="../images/HorrorTooth/Capture1.png" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">3 / 6</div>
+                    <img src="../images/HorrorTooth/Capture2.png" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">4 / 6</div>
+                    <img src="../images/HorrorTooth/Capture3.png" style="width:100%">
+                </div>
+                
+                <div class="mySlides">
+                    <div class="numbertext">5 / 6</div>
+                    <img src="../images/HorrorTooth/Capture4.png" style="width:100%">
+                </div>
+                
+                <div class="mySlides">
+                    <div class="numbertext">6 / 6</div>
+                    <img src="../images/HorrorTooth/HorrorTooth.png" style="width:100%">
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <!-- Image text -->
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+
+                <!-- Thumbnail images -->
+                <div class="row">
+                    <div class="column">
+                        <img class="demo cursor" src="../images/HorrorTooth/Capture.png" style="width:100%" onclick="currentSlide(1)" alt="Splash Screen">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="../images/HorrorTooth/Capture1.png" style="width:100%" onclick="currentSlide(2)" alt="Towers">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="../images/HorrorTooth/Capture2.png" style="width:100%" onclick="currentSlide(3)" alt="Monsters">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="../images/HorrorTooth/Capture3.png" style="width:100%" onclick="currentSlide(4)" alt="In-game screenshot">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="../images/HorrorTooth/Capture4.png" style="width:100%" onclick="currentSlide(4)" alt="In-game screenshot">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="../images/HorrorTooth/HorrorTooth.png" style="width:100%" onclick="currentSlide(4)" alt="In-game screenshot">
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section id="bio">
-            <p>
+            <p class="project-description">
                 Horror-tooth is a first-person Sci-fi horror game, where you must manipulate light to escape a vicious beast. Myself and another programmer created this game when we were both just starting to get our foot in the game development industry. We both dabbled in each discipline such as: both created Art, design and programming tasks. This game was in development from February 2020 to July 2020.
             </p>
         </section>
     </main>
+
+    <script src="../index.js"></script>
 </body>
 
 </html>

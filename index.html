@@ -21,6 +21,7 @@
                 <li class="nav__item"><a href="#work" class="nav__link">Professional Work</a></li>
                 <li class="nav__item"><a href="#skills" class="nav__link">Skills & Tools</a></li>
                 <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
+                <li class="nav__item"><a href="#pastProjects" class="nav__link">Past Projects</a></li>
                 <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
             </ul>
         </div>
@@ -48,6 +49,11 @@
         <section id="work">
             <div class="row">
                 <h2>Professional Work</h2>
+                <div class="company-title">
+                    <h3>Big Ant Studios</h3>
+                    <h4>Augest 2022 - Present</h4>
+                </div>
+
                 <div class="work__boxes">
                     <!-- CRICKET26 -->
                     <div class="work__box">
@@ -55,14 +61,11 @@
                             <h3>Cricket 26 - The Official Game of the Ashes</h3>
                             <h5>20 Nov, 2025</h5>
                             <p>
-                                Featuring the all-new Management Career, a bigger and better Pro Team, in-depth Ashes mode, and expanded control on and off the field from enhanced gameplay and in-depth strategies - Cricket 26 is The Ultimate Showdown.
+                                Cricket 26 was the beginning and turning point for all future titles server-side. Many new changes and upgrades started in Cricket 26 and would later be backported to older / legacy titles and this would be the one branched off for newer titles.
                             </p>
-                            <ul class="work__list">
-                                <li>C#</li>
-                                <li>Lua</li>
-                                <li>AWS</li>
-                                <li>ASP.NET</li>
-                            </ul>
+                            <p>
+                                The first new addition was implementing Redis (specifically Valkey), to utilise AWS ElastiCache and benefit from quicker read speeds and shorter lived data to reduce database load and speed up many read-heavy endpoints. The second was to replace AWS Eventbridge schedulers with Hangfire. Next was to replace in some cases our custom mutexLocks and db locks with a key-value lock short-lived in memory (using Redis).
+                            </p>
 
                             <div class="work__links">
                                 <a href="https://store.steampowered.com/app/3468650/Cricket_26__The_Official_Game_of_the_Ashes/" target="_blank" class="link__text">
@@ -89,14 +92,14 @@
                             <h3>Rugby League 26</h3>
                             <h5>17 Jul, 2025</h5>
                             <p>
-                                GET READY FOR GREATNESS Step onto the pitch in the most authentic Rugby League experience ever! Whether you're chasing club glory, building a custom ‘Pro Team’, or rising through the ranks with a self-made superstar, Rugby League 26 puts YOU at the heart of the action.
+                                - Contributed to the successful launch of the most anticipated game produced by this company, addressing critical server-side issues during the initial release week.
                             </p>
-                            <ul class="work__list">
-                                <li>C#</li>
-                                <li>Lua</li>
-                                <li>AWS</li>
-                                <li>ASP.NET</li>
-                            </ul>
+                            <p>
+                                - Identified and resolved server login issues that impacted user experience, implementing necessary system upgrades to ensure stability.
+                            </p>
+                            <p>
+                                - Overhauled backend processes, optimizing Lambda functions to enhance run-time operations, improving server performance and utilization.
+                            </p>
 
                             <div class="work__links">
                                 <a href="https://store.steampowered.com/app/3468660/Rugby_League_26/?curator_clanid=34275696" target="_blank" class="link__text">
@@ -121,14 +124,8 @@
                             <h3>AFL 26</h3>
                             <h5>8 May, 2025</h5>
                             <p>
-                                Get ready for the future of footy with AFL 26. Feel every hit, hear every roar, and live every moment with unmatched authenticity and intensity.
+                                Launching with Pro Team as a playable game mode, many high expectations were set from AFL 23's major initial Pro Team success and many new additions and upgrades needed to be made to make it more performante, more exciting for end users and more customisable server-side and easier intergradtion for the Live Operations team.
                             </p>
-                            <ul class="work__list">
-                                <li>C#</li>
-                                <li>Lua</li>
-                                <li>AWS</li>
-                                <li>ASP.NET</li>
-                            </ul>
 
                             <div class="work__links">
                                 <a href="https://store.steampowered.com/app/3468640/AFL_26/" target="_blank" class="link__text">
@@ -147,14 +144,8 @@
                             <h3>Rugby 25</h3>
                             <h5>13 Feb, 2025</h5>
                             <p>
-                                Experience the Rugby 25 rush! From local club clashes to the grandest international championships, lifelike gameplay, strategic depth, and heart-stopping action ensure every match is a battle and every victory earned on the path to immortality.
+                                While built from an older codebase, many systems needed to be brought up to date with systems developed across newer titles. Much TRC game certification work was done to get the game through platform submissions.
                             </p>
-                            <ul class="work__list">
-                                <li>C#</li>
-                                <li>Lua</li>
-                                <li>AWS</li>
-                                <li>ASP.NET</li>
-                            </ul>
 
                             <div class="work__links">
                                 <a href="https://store.steampowered.com/app/2340870/Rugby_25/" target="_blank" class="link__text">
@@ -173,14 +164,8 @@
                             <h3>TIEBREAK – GRAND SLAM EDITION</h3>
                             <h5>23 Aug, 2024</h5>
                             <p>
-                                Cricket 24 is the culmination of a decade of Cricket video game development and includes teams from every corner of the globe.
+                                Due to tennis' unique rules and game structure, a lot of systems both client-side and server-side had to be adapted and altered. Working under tight deadlines, entire new game modes had to be implemented end-to-end, coordinating directly with game developers to get data flowing to the UI and gameplay.
                             </p>
-                            <ul class="work__list">
-                                <li>C#</li>
-                                <li>Lua</li>
-                                <li>AWS</li>
-                                <li>ASP.NET</li>
-                            </ul>
 
                             <div class="work__links">
                                 <a href="https://store.steampowered.com/app/2264340/TIEBREAK__GRAND_SLAM_EDITION/" target="_blank" class="link__text">
@@ -199,14 +184,8 @@
                             <h3>Cricket 24</h3>
                             <h5>5 Oct, 2023</h5>
                             <p>
-                                Cricket 24 is the culmination of a decade of Cricket video game development and includes teams from every corner of the globe.
+                                I built and merged across a number of UI screens across from AFL and shortly after AFL 23's Pro Team mode launched, and proved to be a huge success, the gamemode had to be adapted and integrated into Cricket 24.
                             </p>
-                            <ul class="work__list">
-                                <li>C#</li>
-                                <li>Lua</li>
-                                <li>AWS</li>
-                                <li>ASP.NET</li>
-                            </ul>
 
                             <div class="work__links">
                                 <a href="https://store.steampowered.com/app/2358260/Cricket_24/" target="_blank" class="link__text">
@@ -225,15 +204,8 @@
                             <h3>AFL 23</h3>
                             <h5>3 May, 2023</h5>
                             <p>
-                                AFL 23 - IT'S TIME TO FLY!! Feel the Atmosphere, Chase your dreams and Make it your own - in the most realistic AFL game ever!
+                                My first professional shipped title. I contributed to the frontend screens using an in-house UI system before being handed main designship of the client-side networking code using REST API's to communicate to our servers. Beyond client-side, I was then brought onto the server team where I assissted the transition of moving our servers from being hosted on Rackspace to AWS Lambdas. The major milestone of this project was a year after this title's launch, Pro Team - a card-based season game mode - was finally released, and would be the driving point for all new titles.
                             </p>
-                            <ul class="work__list">
-                                <li>C#</li>
-                                <li>C++</li>
-                                <li>Lua</li>
-                                <li>AWS</li>
-                                <li>ASP.NET</li>
-                            </ul>
 
                             <div class="work__links">
                                 <a href="https://store.steampowered.com/app/2337630/AFL_23/" target="_blank" class="link__text">
